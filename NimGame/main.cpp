@@ -9,7 +9,12 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    bool canWinNim(int n);
+    bool win = canWinNim(5);
+    printf("result=%d\n",win);
     return 0;
+}
+
+bool canWinNim(int n) {
+    return n % 4 == 0 ? false : true;
 }
